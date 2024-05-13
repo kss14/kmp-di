@@ -1,0 +1,8 @@
+.idea/
+dist/
+node_modules/
+.nyc_output/
+coverage/
+coverage.lcov
+npm-debug.log
+.DS_STORE

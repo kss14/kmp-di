@@ -1,0 +1,126 @@
+{
+  "_args": [
+    [
+      "@kss14/kmp-di@1.0.10"
+    ]
+  ],
+  "_from": "@kss14/kmp-di@1.0.10",
+  "_id": "@kss14/kmp-di@1.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-4ZxEUCBe3SKhlNA1syrOMCLpOTr9awbJJbsovFszRg7A2XtybSs7EhxWZaz8IlcrO+I4OkAgtALWK55RjJZaEw==",
+  "_location": "/@kss14/kmp-di",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@kss14/kmp-di@1.0.10",
+    "name": "@kss14/kmp-di",
+    "escapedName": "@kss14%2fkmp-di",
+    "scope": "@kss14",
+    "rawSpec": "1.0.10",
+    "saveSpec": null,
+    "fetchSpec": "1.0.10"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "name": "kmp-di",
+  "version": "1.0.10",
+  "description": "Kmp-di is based on the NodeDependencyInjection component, which enables you to standardize and centralize the construction of objects in your application. However, kmp-di takes into account namespaces that correspond to the class path.",
+  "main": "dist/lib/index.js",
+  "preferGlobal": true,
+  "bin": {
+    "ndi": "dist/bin/ndi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kss14/kmp-di.git"
+  },
+  "keywords": [
+    "node",
+    "dependency",
+    "injection",
+    "service",
+    "container",
+    "console",
+    "inversion-of-control",
+    "service-locator"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "types": "dist/lib/types/index.d.ts",
+  "author": "Kevin Saint-Sauveur<kss14@hotmail.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kss14/kmp-di/issues"
+  },
+  "homepage": "https://github.com/kss14/kmp-di#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build:lib": "babel lib -d dist/lib -D --compact --no-comments",
+    "build:bin": "babel bin -d dist/bin -D --compact --no-comments",
+    "build": "npm run build:lib && npm run build:bin"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/runtime": "^7.24.5",
+    "@typescript-eslint/typescript-estree": "^5.62.0",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "console.table": "^0.10.0",
+    "js-yaml": "^4.1.0",
+    "json5": "^2.2.3",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/register": "^7.23.7",
+    "@types/chai": "^4.3.16",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^9.1.1",
+    "babel-plugin-istanbul": "^6.1.1",
+    "chai": "^4.4.1",
+    "chai-as-promised": "^7.1.2",
+    "chai-iterator": "^3.0.2",
+    "codecov": "4.0.0-0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2",
+    "standard": "^16.0.4",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^4.9.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/transform-runtime"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  },
+  "false": {}
+}
